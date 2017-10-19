@@ -12,7 +12,8 @@ matrix:
         - php: 7
 
 before_script:
+    - wget https://phar.phpunit.de/phpunit-4.8.9.phar
     - wget http://getcomposer.org/composer.phar
     - php composer.phar install --dev
 
-script: phpunit --coverage-text
+script: php phpunit-4.8.9.phar --coverage-text
