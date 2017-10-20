@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(ticks = 1);
+
 namespace Spork;
 
 use Spork\Exception\ProcessControlException;
